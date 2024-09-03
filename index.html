@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <style>
+        
+        .container{
+            background-color: rgba(238, 43, 53, 0.692);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid bisque;
+            width:400px;
+            margin:auto;
+            border-radius: 50px;
+            box-shadow: 5px 5px 5px 10px
+                          bisque;
+            
+        }
+        h2{
+            text-align: right;
+            color:white;
+        }
+        button{
+            width:55px;
+            height: 50px;
+            border-radius: 50%;
+            padding:5px;
+            margin:4px;
+            background-color: bisque;
+            font-family: monospace;
+            font-weight: bolder;
+            font-style: normal;
+            border:bisque;
+            font-size: x-large;
+        }
+        #clear {
+            width: 100px;
+            border-radius: 50%;
+        }
+        #AC{
+            width:100px;
+        }
+        h1{
+            text-align: center;
+            font-family: monospace;
+        }
+            </style>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <h2 id="inp"></h2>
+        <div>
+            <button id="clear">Clear</button>
+            <button id="AC">AC</button>
+        </div>
+        <div>
+            <button onclick="handleClick(event)" id="8">8</button>
+            <button onclick="handleClick(event)" id="9">9</button>
+            <button onclick="handleClick(event)" id="7">7</button>
+            <button onclick="handleClick(event)" id="/">/</button>
+        </div>
+        <div>
+            <button onclick="handleClick(event)" id="6">6</button>
+            <button onclick="handleClick(event)" id="5">5</button>
+            <button onclick="handleClick(event)" id="4">4</button>
+            <button onclick="handleClick(event)" id="*">*</button>
+        </div>
+        <div>
+
+            <button onclick="handleClick(event)" id="3">3</button>
+            <button onclick="handleClick(event)" id="2">2</button>
+            <button onclick="handleClick(event)" id="1">1</button>
+            <button onclick="handleClick(event)" id="-">-</button>
+        </div>
+        <div>
+
+            <button onclick="handleClick(event)" id="0">0</button>
+            <button onclick="handleClick(event)" id="+">+</button>
+            <button onclick="handleClick(event)" id=".">.</button>
+            <button id="equal">=</button>
+        </div>
+    </div>
+    <script  src="calc.js"></script>
+</body>
+</html>
